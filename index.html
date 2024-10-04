@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>HTML-CSS Technical Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>HTML and CSS Documentation</h1>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+            <li><a class="nav-link" href="#Basic_HTML_Structure">Basic HTML Structure</a></li>
+            <li><a class="nav-link" href="#Common_HTML_Elements">Common HTML Elements</a></li>
+            <li><a class="nav-link" href="#What_is_CSS?">What is CSS?</a></li>
+            <li><a class="nav-link" href="#CSS_Syntax_and_Selectors">CSS Syntax and selectors</a></li>
+            <li><a class="nav-link" href="#Common_CSS_Properties">Common CSS Properties</a></li>
+            <li><a class="nav-link" href="#Best_Practices">Best Practices</a></li>
+            <li><a class="nav-link" href="#Resources">Resources</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <article>
+                <p>
+                    HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets)
+                    are the foundational technologies for building web pages. HTML
+                    structures the content, while CSS styles it, allowing developers
+                    to create visually appealing and well-organized websites.
+                </p>
+            </article>
+        </section>
+        <section id="What_is_HTML?" class="main-section">
+            <header>
+                <h2>What is HTML?</h2>
+            </header>
+            <article>
+                <p>
+                    HTML is the standard markup language used to create web pages.
+                    It describes the structure of a webpage using elements and tags,
+                    allowing browsers to interpret and display content effectively.
+                </p>
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>
+                        <strong>Structure:</strong> Organizes content into elements
+                        like headings, paragraphs, links, and lists
+                    </li>
+                    <li>
+                        <strong>Semantics:</strong> Provides meaning to web content,
+                        enhancing accessibility and SEO.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="Basic_HTML_Structure" class="main-section">
+            <header>
+                <h2>Basic HTML Structure</h2>
+            </header>
+            <article>
+                <p>
+                    An HTML document typically follows this structure:
+                </p>
+                <br>
+                    <div class="code-block">
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="en"&gt;<br>
+                            &nbsp;&nbsp;&lt;head&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Document Title&lt;/title&gt;<br>
+                                &nbsp;&nbsp;&lt;/head&gt;<br>
+                                &nbsp;&nbsp;&lt;body&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello, World!&lt;/h1&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt<br>
+                                &nbsp;&nbsp;&lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </code>
+                    </div>
+                <h3>Explanation of Key Tags:</h3>
+                <ul>
+                    <li>
+                        <code><strong>&lt;!DOCTYPE html&gt;</strong></code>: Declares the document type.
+                    </li>
+                    <li>
+                        <code><strong>&lt;html&gt;</strong></code>: Root element of the HTML document.
+                    </li>
+                    <li>
+                        <code><strong>&lt;head&gt;</strong></code>: Contains meta-information about the document.
+                    </li>
+                    <li>
+                        <code><strong>&lt;body&gt;</strong></code>: Contains the content of the document.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="Common_HTML_Elements" class="main-section">
+            <header>
+                <h2>Common HTML ELements</h2>
+            </header>
+            <article>
+                <p class="to-bottom">Here are some commonly used HTML elements:</p>
+                <ul>
+                    <li>
+                        <strong>Headings</strong>: <code><strong>&lt;h1&gt;</strong></code> to<code> <strong>&lt;h6&gt;</strong></code>
+                    </li>
+                    <li>
+                        <strong>Paragraphs</strong>: <code><strong>&lt;p&gt;</strong></code>
+                    </li>
+                    <li>
+                        <strong>Links</strong>: <code><strong>&lt;a href="URL"&gt;</strong>Link text<strong>&lt;/a&gt;</strong></code>
+                    </li>
+                    <li>
+                        <strong>Images</strong>: <code><strong>&lt;img src="image.jpg" alt="description"&gt;</strong></code>
+                    </li>
+                    <li>
+                        <strong>Lists</strong>: <code><strong>&lt;ul&gt;</strong></code>, <code><strong>&lt;ol&gt;</strong></code>, and <code><strong>&lt;li&gt;</strong></code>
+                    </li>
+                    <li>
+                        <strong>Forms</strong>: <code><strong>&lt;form&gt;</strong></code>, <code><strong>&lt;input&gt;</strong></code>, <code><strong>&lt;button&gt;</strong></code>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="What_is_CSS?" class="main-section">
+            <header>
+                <h2>What is CSS?</h2>
+            </header>
+            <article>
+                <p>
+                    CSS is a stylesheet language used to describe the presentation of HTML documents.
+                    It enables developers to control layout, colors, fonts, and overall visual
+                    aesthetics of web pages.
+                </p>
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>
+                        <strong>Separation of Concerns</strong>: Keeps content (HTML) and presentation (CSS) separate for easier maintenance.
+                    </li>
+                    <li>
+                        <strong>Responsive Design</strong>: Allows for media queries and flexible layouts that adapt to different screen sizes.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="CSS_Syntax_and_Selectors" class="main-section">
+            <header>
+                <h2>CSS Syntax and Selectors</h2>
+            </header>
+            <article>
+                <p class="to-bottom">
+                    CSS rules consist of selectors and declarations that
+                    use properties and values. Example:
+                </p>
+                    <div class="code-block">
+                        <code>
+                            h1 {
+                                color: blue;
+                                font-size: 24px;
+                            }
+                        </code>
+                    </div>
+                    <br>
+                <p class="to-bottom">Where:</p>
+                <ul>
+                    <li><code><strong>h1</strong></code>: This is the selector</li>
+                    <li><code><strong>color</strong></code>: This is the property</li>
+                    <li><code><strong>blue</strong></code>: This is the value</li>
+                </ul>
+                <h3>Types of Selectors:</h3>
+                <p class="to-bottom">Here is a list of the types of selectors you can use:</p>
+                <ul>
+                    <li>
+                        <strong>Type Selector</strong>: Selects all elements of a given type (e.g., <code><strong>p</strong></code>)
+                    </li>
+                    <li>
+                        <strong>Class Selector</strong>: Selects elements with a specific class (e.g., <code><strong>.className</strong></code>)
+                    </li>
+                    <li>
+                        <strong>ID Selector</strong>: Selects a unique element (e.g., <code><strong>#idName</strong></code>)
+                    </li>
+                    <li>
+                        <strong>Attribute Selector</strong>: Selects elements based on attributes (e.g., <code><strong>[type="text"]</strong></code>)
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="Common_CSS_Properties" class="main-section">
+            <header>
+                <h2>Common CSS Properties</h2>
+            </header>
+            <article>
+                <p class="to-bottom">Some common css properties you will use often:</p>
+                <ul>
+                    <li>
+                        <strong>Color</strong>: <code><strong>color</strong></code>, <code><strong>background-color</strong></code>
+                    </li>
+                    <li>
+                        <strong>Font</strong>: <code><strong>font-family</strong></code>, <code><strong>font-size</strong></code>, <code><strong>font-weight</strong></code>
+                    </li>
+                    <li>
+                        <strong>Box Model</strong>: <code><strong>margin</strong></code>, <code><strong>padding</strong></code>, <code><strong>border</strong></code>
+                    </li>
+                    <li>
+                        <strong>Layout</strong>: <code><strong>display</strong></code>, <code><strong>position</strong></code>, <code><strong>flex</strong></code>, <code><strong>grid</strong></code>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="Best_Practices" class="main-section">
+            <header>
+                <h2>Best Practices</h2>
+            </header>
+            <article>
+                <p class="to-bottom">When writing HTML and CSS keep this list of best practices in mind:</p>
+                <ul>
+                    <li>
+                        <strong>Use Semantic HTML</strong>: Use appropriate tags to enhance readability and SEO.
+                    </li>
+                    <li>
+                        <strong>Keep CSS Organized</strong>: Use comments, grouping, and consistent naming conventions.
+                    </li>
+                    <li>
+                        <strong>Minimize Inline Styles</strong>: Prefer external stylesheets for better maintainability.
+                    </li>
+                    <li>
+                        <strong>Test Responsiveness</strong>: Use media queries to ensure designs look good on all devices.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="Resources" class="main-section">
+            <header>
+                <h2>Resources</h2>
+            </header>
+            <article>
+                <p class="to-bottom">Some resources where for you to study and find more information:</p>
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs - CSS</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML Tutorial</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/css/" target="_blank">W3Schools - CSS Tutorial</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
